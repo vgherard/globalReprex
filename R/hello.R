@@ -6,11 +6,11 @@
 #' @return a string
 #'
 #' @export
-hello <- function(object) {
-        greet <- "Ciao"
-        UseMethod("hello", object)
+greet <- function(object) {
+        greeting <- "hola"
+        UseMethod("greet", object)
 }
 
 #' @export
-hello.character <- function(object)
-        paste(greet, object)
+greet.character <- function(object)
+        paste(greeting, object)
